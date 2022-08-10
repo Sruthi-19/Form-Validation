@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Sign Up</title>
+    <script src="getData.js">
+    </script>    
+</head>
+<body>
+    <h1> Signup </h1>
+    <form onsubmit="return registerData()">
+        <table>
+            <tr>
+                <td> <label for="fn">First Name<span style="color: red;">*</span></label> </td>
+                <td> <input type="text" name="" id="fn" placeholder="first name" pattern="[a-zA-Z]+" title="Enter First Name" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="ln">Last Name<span style="color: red;">*</span></label> </td>
+                <td> <input type="text" name="" id="ln" placeholder="last name" pattern="[a-zA-Z]+" title="Enter Last Name" required>  </td>
+            </tr>
+            <tr>
+                <td> <label for="mail1">E Mail<span style="color: red;">*</span></label> </td>
+                <td> <input type="text" name="" id="mail1" placeholder="email id" title="Enter a valid email id" required>  </td>
+            </tr>
+            <tr>
+                <td> <label for="phnum">Phone Number</label> </td>
+                <td> <input type="tel" name="" id="phnum" placeholder="phone number" title="Enter a valid mobile number" pattern="[0-9]{10}">  </td>
+            </tr>
+            <tr>
+                <td> <label for="setpass">Set Password<span style="color: red;">*</span></label> </td>
+                <td> <input type="password" name="" id="setpass" placeholder="set password" title="Min length 6. Should contain alphabets,numbers and special characters" required>   </td>
+            </tr>
+            <tr>
+                <td> <label for="confpass">Confirm Password<span style="color: red;">*</span></label> </td>
+                <td> <input type="password" name="" id="confpass" placeholder="confirm password" title="Should be same as set password" required>    </td>
+            </tr>
+            <tr>
+                <td> <span style="color: red;">* </span><span class="span-rquired-field"> Required Field</span></td>
+
+            </tr>
+        </table>
+        <div>
+            <input type="submit" value="Sign Up" class="sub"> 
+            <p style="margin-top: 20px;">Already have an account? <a href="login.html" class="login-link">Login</a></p>
+        </div>
+        
+    </form>
+</body>
+
+</html>
